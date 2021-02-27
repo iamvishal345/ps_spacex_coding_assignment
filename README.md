@@ -1,2 +1,15 @@
 # Front End React Task
-<a href="https://iamvishal345.github.io/frontend-task-college/">Live Demo</a>
+<p>To Setup</p>
+1. Clone Repository <br/>
+2. Run
+   
+   ```Javascript  
+   npm install
+   ```
+3. Run development server using
+   
+   ```Javascript  
+    npm run dev
+   ```
+
+<a href="https://ps-spacex-coding-assignment.herokuapp.com/">Live Demo</a>
