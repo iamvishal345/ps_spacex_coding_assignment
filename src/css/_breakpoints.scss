@@ -1,0 +1,16 @@
+//responsive break points
+@mixin tablet {
+  @media (min-width: 700px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+@mixin big-desktop {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}

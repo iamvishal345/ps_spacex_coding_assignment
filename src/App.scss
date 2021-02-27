@@ -1,0 +1,98 @@
+@import "./css//breakpoints";
+
+:root {
+  font-size: 12px;
+  @include desktop {
+    font-size: 14px;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 1rem;
+  background-color: #f1efef;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+main {
+  display: grid;
+  row-gap: 1rem;
+  @include tablet {
+    grid-template-columns: 20rem auto;
+    column-gap: 1rem;
+  }
+  .filters-container {
+    background-color: #ffffff;
+    padding: 0.8rem;
+    border-radius: 5px;
+    max-height: 40rem;
+    .filters {
+      padding: 0px 1rem;
+      p {
+        text-align: center;
+        width: 80%;
+        border-bottom: 1px solid #998989;
+        margin: 0.4rem auto;
+      }
+      .filters-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 1rem;
+        .filter-button {
+          background-color: #5adc5a78;
+          cursor: pointer;
+          border: none;
+          width: fit-content;
+          padding: 0.4rem 1.5rem;
+          border-radius: 5px;
+          margin: auto;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+  .cards-container {
+    display: grid;
+    row-gap: 2rem;
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 1rem;
+    }
+    @include desktop {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    > h1 {
+      grid-column: 2 / span 2;
+      grid-row: 2;
+    }
+  }
+}
+footer {
+  position: relative;
+  p {
+    position: absolute;
+    margin: 1rem;
+    left: 50%;
+    top: 20vh;
+  }
+}
+.w-100 {
+  width: 100%;
+}
+
+.active {
+  background-color: #19b419 !important;
+}
