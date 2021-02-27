@@ -2,7 +2,8 @@ import express from "express";
 
 import serverRenderer from "./middleware/renderer";
 
-const PORT = 3000;
+let PORT = 3000;
+if (process.env.NODE_ENV === "production") PORT = process.env.PORT;
 const path = require("path");
 
 const app = express();
